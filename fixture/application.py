@@ -1,13 +1,16 @@
 from selenium import webdriver
+from fixture.session import SessionHelper
+
 
 class Application:
     def __init__(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
+        # конструирование помощника
+        # помощник получает ссылку на саму фикстуру (объект класса Application)
+        # дает возможность в одном помощнике обратиться к другому, через объект класса Application
+        self.session = SessionHelper(self)
 
-    def logout(self):
-        driver = self.driver #извелечение ссылки на драйвер из текущего объекта
-        driver.find_element_by_link_text("Logout").click()
 
     def return_to_group_page(self):
         driver = self.driver
@@ -35,16 +38,6 @@ class Application:
     def open_groups_page(self):
         driver = self.driver
         driver.find_element_by_link_text("groups").click()
-
-    def login(self, username, password):
-        driver = self.driver
-        self.open_home_page()
-        driver.find_element_by_name("user").click()
-        driver.find_element_by_name("user").clear()
-        driver.find_element_by_name("user").send_keys(username)
-        driver.find_element_by_name("pass").clear()
-        driver.find_element_by_name("pass").send_keys(password)
-        driver.find_element_by_xpath("//input[@value='Login']").click()
 
     def open_home_page(self):
         driver = self.driver

@@ -4,7 +4,8 @@
     <list default="true" id="4f43c61d-9ec9-4ddf-a76c-b76131d8a2cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +35,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/fixture" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\GitHub\python_test\model" />
+      <recent name="C:\Users\Admin\Documents\GitHub\python_test\test" />
+      <recent name="C:\Users\Admin\Documents\GitHub\python_test\fixture" />
+    </key>
   </component>
   <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
     <configuration name="Unittests in test_add_group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -94,22 +102,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="282" key="FileChooserDialogImpl/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583604556731" />
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1583604240795">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1583639943653">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583604240795" />
-    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1583604240794">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583639943653" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1583639943653">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.center/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583604240794" />
-    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1583604240794">
+    <state width="1899" height="285" key="GridCell.Tab.0.center/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583639943653" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1583639943653">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.left/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583604240794" />
-    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1583604240794">
+    <state width="1899" height="285" key="GridCell.Tab.0.left/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583639943653" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1583639943653">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.right/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583604240794" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583639943653" />
     <state x="463" y="170" key="SettingsEditor" timestamp="1583604361977">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
