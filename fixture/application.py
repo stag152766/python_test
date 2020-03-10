@@ -7,7 +7,6 @@ from fixture.contact import ContactHelper
 class Application:
     def __init__(self):
         self.driver = webdriver.Chrome()
-        self.driver.implicitly_wait(30)
         # конструирование помощника
         # помощник получает ссылку на саму фикстуру (объект класса Application)
         # это дает возможность в одном помощнике обратиться к другому, через объект класса Application
