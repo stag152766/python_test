@@ -4,7 +4,7 @@ class SessionHelper:
         self.app = app
 
     def login(self, username, password):
-        driver = self.app.driver # извелечение ссылки на драйвер из текущего объекта
+        driver = self.app.driver  # извелечение ссылки на драйвер из текущего объекта
         self.app.open_home_page()
         driver.find_element_by_name("user").click()
         driver.find_element_by_name("user").clear()
@@ -23,17 +23,16 @@ class SessionHelper:
 
     def is_logged_in(self):
         driver = self.app.driver
-        return len(driver.find_elements_ny_name("Logout")) > 0
+        return len(driver.find_elements_by_link_text("Logout")) > 0
 
-    def is_logged_as(self, username):
+    def is_logged_in_as(self, username):
         driver = self.app.driver
-        driver.find_element_by_xpath("//div/div[1]/form/b").text == "(" + username + ")"
-
+        return driver.find_element_by_xpath("//div[@id='top']/form/b").text == "(" + username + ")"
 
     def ensure_login(self, username, password):
         driver = self.app.driver
         if self.is_logged_in():
-            if self.is_logged_as(username):
+            if self.is_logged_in_as(username):
                 return
             else:
                 self.logout()

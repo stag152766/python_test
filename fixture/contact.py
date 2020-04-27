@@ -27,6 +27,7 @@ class ContactHelper:
 
     def modify_contact(self, new_contact_data):
         driver = self.app.driver
+        self.return_home_page()
         driver.find_element_by_xpath("//img[@alt='Edit']").click()
         self.fill_contact_form(new_contact_data)
         driver.find_element_by_name('update').click()

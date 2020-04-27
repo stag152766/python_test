@@ -6,6 +6,7 @@ fixture = None
 
 @pytest.fixture
 def app():
+    # объявляем, что собираемся пользоваться глобальной переменной
     global fixture
     if fixture is None:
         fixture = Application()
