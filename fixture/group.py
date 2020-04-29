@@ -49,6 +49,7 @@ class GroupHelper:
     def modify_first_group(self, new_group_data):
         driver = self.app.driver
         self.open_groups_page()
+        driver.find_element_by_name("selected[]").click()
         driver.find_element_by_name("edit").click()
         self.fill_group_form(new_group_data)
         driver.find_element_by_name("update").click()
