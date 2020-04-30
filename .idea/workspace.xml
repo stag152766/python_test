@@ -5,10 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lessons.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_modify_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_modify_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
       <recent name="C:\Users\Admin\Documents\GitHub\python_test\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_modify_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
     <configuration name="test_add_group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_modify_group.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
-        <item itemvalue="Python tests.pytest in test_del_group.py" />
-        <item itemvalue="Python tests.pytest in test" />
         <item itemvalue="Python.test_add_group" />
+        <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest in test_modify_group.py" />
+        <item itemvalue="Python tests.pytest in test_del_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -171,46 +168,46 @@
     <state x="526" y="195" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588092192736" />
     <state x="526" y="198" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1583656066572" />
     <state x="740" y="282" key="FileChooserDialogImpl/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583604556731" />
-    <state width="1345" height="275" key="GridCell.Tab.0.bottom" timestamp="1588179344291">
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom" timestamp="1588246875856">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588179344291" />
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588246875856" />
     <state width="1345" height="264" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583671711835" />
     <state width="1899" height="406" key="GridCell.Tab.0.bottom/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583772993865" />
-    <state width="1345" height="275" key="GridCell.Tab.0.center" timestamp="1588179344291">
+    <state width="1345" height="182" key="GridCell.Tab.0.center" timestamp="1588246875856">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588179344291" />
+    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588246875856" />
     <state width="1345" height="264" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1583671711835" />
     <state width="1899" height="406" key="GridCell.Tab.0.center/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583772993865" />
-    <state width="1345" height="275" key="GridCell.Tab.0.left" timestamp="1588179344291">
+    <state width="1345" height="182" key="GridCell.Tab.0.left" timestamp="1588246875856">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588179344291" />
+    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588246875856" />
     <state width="1345" height="264" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1583671711835" />
     <state width="1899" height="406" key="GridCell.Tab.0.left/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583772993865" />
-    <state width="1345" height="275" key="GridCell.Tab.0.right" timestamp="1588179344291">
+    <state width="1345" height="182" key="GridCell.Tab.0.right" timestamp="1588246875856">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588179344291" />
+    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588246875856" />
     <state width="1345" height="264" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1583671711835" />
     <state width="1899" height="406" key="GridCell.Tab.0.right/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583772993865" />
-    <state width="1345" height="275" key="GridCell.Tab.1.bottom" timestamp="1588179331273">
+    <state width="1345" height="275" key="GridCell.Tab.1.bottom" timestamp="1588246849410">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588179331273" />
-    <state width="1345" height="275" key="GridCell.Tab.1.center" timestamp="1588179331273">
+    <state width="1345" height="275" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588246849410" />
+    <state width="1345" height="275" key="GridCell.Tab.1.center" timestamp="1588246849410">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1588179331273" />
-    <state width="1345" height="275" key="GridCell.Tab.1.left" timestamp="1588179331273">
+    <state width="1345" height="275" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1588246849410" />
+    <state width="1345" height="275" key="GridCell.Tab.1.left" timestamp="1588246849410">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1588179331273" />
-    <state width="1345" height="275" key="GridCell.Tab.1.right" timestamp="1588179331273">
+    <state width="1345" height="275" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1588246849410" />
+    <state width="1345" height="275" key="GridCell.Tab.1.right" timestamp="1588246849410">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="275" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1588179331273" />
+    <state width="1345" height="275" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1588246849410" />
     <state x="329" y="13" key="SettingsEditor" timestamp="1587924060357">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -234,21 +231,6 @@
           <url>file://$PROJECT_DIR$/test/test_del_group.py</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fixture/group.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fixture/group.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fixture/group.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

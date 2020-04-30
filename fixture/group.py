@@ -17,6 +17,7 @@ class GroupHelper:
         # submit group creation
         driver.find_element_by_name("submit").click()
         self.return_to_groups_page()
+        self.group_cashe = None
 
     def fill_group_form(self, group):
         self.change_field_value("group_name", group.name)
@@ -41,6 +42,7 @@ class GroupHelper:
         self.select_first_group()
         driver.find_element_by_name("delete").click()
         self.return_to_groups_page()
+        self.group_cashe = None
 
     def select_first_group(self):
         driver = self.app.driver
@@ -54,18 +56,22 @@ class GroupHelper:
         self.fill_group_form(new_group_data)
         driver.find_element_by_name("update").click()
         self.return_to_groups_page()
+        self.group_cashe = None
 
     def count(self):
         driver = self.app.driver
         self.open_groups_page()
         return len(driver.find_elements_by_name("selected[]"))
 
+    group_cashe = None
+
     def get_group_list(self):
-        driver = self.app.driver
-        self.open_groups_page()
-        groups = []
-        for element in driver.find_elements_by_css_selector("span.group"):
-            text = element.text
-            id = element.find_element_by_name('selected[]').get_attribute('value')
-            groups.append(Group(name = text, id = id))
-        return groups
+        if self.group_cashe is None:
+            driver = self.app.driver
+            self.open_groups_page()
+            self.group_cashe = []
+            for element in driver.find_elements_by_css_selector("span.group"):
+                text = element.text
+                id = element.find_element_by_name('selected[]').get_attribute('value')
+                self.group_cashe.append(Group(name = text, id = id))
+        return list(self.group_cashe)
