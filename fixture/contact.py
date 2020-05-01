@@ -13,6 +13,7 @@ class ContactHelper:
         self.fill_contact_form(contact)
         driver.find_element_by_xpath("(//input[@name='submit'])[2]").click()
         self.return_home_page()
+        self.contacts_cashe = None
 
     def fill_contact_form(self, contact):
         self.change_field_value("firstname", contact.firstname)
@@ -36,18 +37,22 @@ class ContactHelper:
         self.fill_contact_form(new_contact_data)
         driver.find_element_by_name('update').click()
         self.return_home_page()
+        self.contacts_cashe = None
+
+    contacts_cashe = None
 
     def get_contact_list(self):
-        driver = self.app.driver
-        self.return_home_page()
-        contacts = []
-        for row in driver.find_elements_by_name("entry"):
-            cells = row.find_elements_by_tag_name('td')
-            firstname = cells[2].text
-            lastname = cells[1].text
-            id = row.find_element_by_name('selected[]').get_attribute("value")
-            contacts.append(Contact(id=id, firstname=firstname, lastname=lastname))
-        return contacts
+        if self.contacts_cashe is None:
+            driver = self.app.driver
+            self.return_home_page()
+            self.contacts_cashe = []
+            for row in driver.find_elements_by_name("entry"):
+                cells = row.find_elements_by_tag_name('td')
+                firstname = cells[2].text
+                lastname = cells[1].text
+                id = row.find_element_by_name('selected[]').get_attribute("value")
+                self.contacts_cashe.append(Contact(id=id, firstname=firstname, lastname=lastname))
+        return list(self.contacts_cashe)
 
     def delete_first_contact(self):
         driver = self.app.driver
@@ -60,6 +65,7 @@ class ContactHelper:
             alert.accept()
         except TimeoutError:
             print('no alert')
+        self.contacts_cashe = None
 
     def count(self):
         driver = self.app.driver
