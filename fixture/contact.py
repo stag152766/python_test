@@ -15,9 +15,8 @@ class ContactHelper:
         self.return_home_page()
 
     def fill_contact_form(self, contact):
-        self.change_field_value("firstname", contact.first)
-        self.change_field_value("middlename", contact.middle)
-        self.change_field_value("lastname", contact.last)
+        self.change_field_value("firstname", contact.firstname)
+        self.change_field_value("lastname", contact.lastname)
 
     def change_field_value(self, field_name, text):
         driver = self.app.driver
@@ -42,12 +41,12 @@ class ContactHelper:
         driver = self.app.driver
         self.return_home_page()
         contacts = []
-        for element in driver.find_elements_by_name("entry"):
-            id = element.find_element_by_name('selected[]').get_attribute('value')
-            first = element.text
-            #first2 = element.find_element_by_xpath('//td[3]').text
-            #text = element.find_element_by_name('selected[]').get_attribute('title')
-            contacts.append(Contact(id=id, first=first))
+        for row in driver.find_elements_by_name("entry"):
+            cells = row.find_elements_by_tag_name('td')
+            firstname = cells[2].text
+            lastname = cells[1].text
+            id = row.find_element_by_name('selected[]').get_attribute("value")
+            contacts.append(Contact(id=id, firstname=firstname, lastname=lastname))
         return contacts
 
     def delete_first_contact(self):
