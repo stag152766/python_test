@@ -10,7 +10,7 @@ def test_modify_contact_by_index(app):
     contact = Contact(firstname="New name")
     contact.id = old_contacts[index].id
     contact.lastname = old_contacts[0].lastname
-    app.contact.modify_contact_by_index(contact, index)
+    app.contact.open_contact_to_edit_by_index(contact, index)
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == app.contact.count()
     old_contacts[index] = contact
