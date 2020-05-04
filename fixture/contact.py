@@ -70,7 +70,7 @@ class ContactHelper:
         cell = row.find_elements_by_tag_name('td')[7]
         cell.find_element_by_tag_name('a').click()
 
-    contact_cache = None 
+    contact_cache = None
 
     def get_contact_list(self):
         if self.contact_cache is None:
