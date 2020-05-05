@@ -4,7 +4,6 @@
     <list default="true" id="4f43c61d-9ec9-4ddf-a76c-b76131d8a2cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lessons.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lessons.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +43,7 @@
       <recent name="C:\Users\Admin\Documents\GitHub\python_test\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_del_group.test_delete_some_group">
+  <component name="RunManager" selected="Python tests.pytest in test_del_group.py">
     <configuration name="pytest for test_add_group.test_add_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,21 +89,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_phones.test_phones_on_view_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_phones.test_phones_on_view_page&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,20 +104,35 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_del_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--browser\u003dfirefox&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python tests.pytest for test_add_group.test_add_group" />
       <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page" />
-      <item itemvalue="Python tests.pytest for test_phones.test_phones_on_view_page" />
       <item itemvalue="Python tests.pytest in test_add_contact.py" />
       <item itemvalue="Python tests.pytest for test_del_group.test_delete_some_group" />
+      <item itemvalue="Python tests.pytest in test_del_group.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest for test_del_group.test_delete_some_group" />
         <item itemvalue="Python tests.pytest for test_add_group.test_add_group" />
         <item itemvalue="Python tests.pytest for test_phones.test_phones_on_home_page" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
-        <item itemvalue="Python tests.pytest for test_phones.test_phones_on_view_page" />
       </list>
     </recent_temporary>
   </component>
@@ -159,10 +158,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#Notifications/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583520843241" />
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588613051011">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588644842689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588613051011" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588644842689" />
     <state x="53" y="328" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588527982228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -185,46 +184,46 @@
     <state x="526" y="195" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588092192736" />
     <state x="526" y="198" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1583656066572" />
     <state x="740" y="282" key="FileChooserDialogImpl/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583604556731" />
-    <state width="1345" height="210" key="GridCell.Tab.0.bottom" timestamp="1588613232061">
+    <state width="1345" height="180" key="GridCell.Tab.0.bottom" timestamp="1588644843468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588613232061" />
+    <state width="1345" height="180" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588644843468" />
     <state width="1345" height="264" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583671711835" />
     <state width="1899" height="406" key="GridCell.Tab.0.bottom/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583772993865" />
-    <state width="1345" height="210" key="GridCell.Tab.0.center" timestamp="1588613232061">
+    <state width="1345" height="180" key="GridCell.Tab.0.center" timestamp="1588644843468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588613232061" />
+    <state width="1345" height="180" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588644843468" />
     <state width="1345" height="264" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1583671711835" />
     <state width="1899" height="406" key="GridCell.Tab.0.center/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583772993865" />
-    <state width="1345" height="210" key="GridCell.Tab.0.left" timestamp="1588613232061">
+    <state width="1345" height="180" key="GridCell.Tab.0.left" timestamp="1588644843468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588613232061" />
+    <state width="1345" height="180" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588644843468" />
     <state width="1345" height="264" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1583671711835" />
     <state width="1899" height="406" key="GridCell.Tab.0.left/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583772993865" />
-    <state width="1345" height="210" key="GridCell.Tab.0.right" timestamp="1588613232061">
+    <state width="1345" height="180" key="GridCell.Tab.0.right" timestamp="1588644843468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588613232061" />
+    <state width="1345" height="180" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588644843468" />
     <state width="1345" height="264" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1583671711835" />
     <state width="1899" height="406" key="GridCell.Tab.0.right/1920.304.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1583772993865" />
-    <state width="1345" height="210" key="GridCell.Tab.1.bottom" timestamp="1588613232061">
+    <state width="1345" height="210" key="GridCell.Tab.1.bottom" timestamp="1588644753935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588613232061" />
-    <state width="1345" height="210" key="GridCell.Tab.1.center" timestamp="1588613232061">
+    <state width="1345" height="210" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588644753935" />
+    <state width="1345" height="210" key="GridCell.Tab.1.center" timestamp="1588644753934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1588613232061" />
-    <state width="1345" height="210" key="GridCell.Tab.1.left" timestamp="1588613232061">
+    <state width="1345" height="210" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1588644753934" />
+    <state width="1345" height="210" key="GridCell.Tab.1.left" timestamp="1588644753934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1588613232061" />
-    <state width="1345" height="210" key="GridCell.Tab.1.right" timestamp="1588613232061">
+    <state width="1345" height="210" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1588644753934" />
+    <state width="1345" height="210" key="GridCell.Tab.1.right" timestamp="1588644753935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1588613232061" />
+    <state width="1345" height="210" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1588644753935" />
     <state x="329" y="13" key="SettingsEditor" timestamp="1587924060357">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
