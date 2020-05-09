@@ -3,6 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import re
 
+
 class ContactHelper:
     def __init__(self, app):
         self.app = app
@@ -18,6 +19,10 @@ class ContactHelper:
     def fill_contact_form(self, contact):
         self.change_field_value("firstname", contact.firstname)
         self.change_field_value("lastname", contact.lastname)
+        self.change_field_value("home", contact.homephone)
+        self.change_field_value("work", contact.workphone)
+        self.change_field_value("work", contact.mobilephone)
+        self.change_field_value("phone2", contact.secondaryphone)
 
     def change_field_value(self, field_name, text):
         driver = self.app.driver
