@@ -1,0 +1,68 @@
+[
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "",
+    "lastname": "",
+    "homephone": "",
+    "mobilephone": "",
+    "workphone": "",
+    "secondaryphone": "",
+    "id": null,
+    "all_phones_from_home_page": null
+  },
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "firstname2V #~",
+    "lastname": "lastnameZf0+ qmr-5:s`:ta",
+    "homephone": "72{16",
+    "mobilephone": "77",
+    "workphone": "82#<7)'",
+    "secondaryphone": "83 1(\"&",
+    "id": null,
+    "all_phones_from_home_page": null
+  },
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "firstnamenJ",
+    "lastname": "lastnameW;",
+    "homephone": "72)8'",
+    "mobilephone": "77{",
+    "workphone": "82 . ?",
+    "secondaryphone": "8344$1#&",
+    "id": null,
+    "all_phones_from_home_page": null
+  },
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "firstname?SMta bl_",
+    "lastname": "lastname?nXmqUe0jw8~RC@",
+    "homephone": "72",
+    "mobilephone": "77",
+    "workphone": "82",
+    "secondaryphone": "83(~4\"\"",
+    "id": null,
+    "all_phones_from_home_page": null
+  },
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "firstnameETBYB",
+    "lastname": "lastnameRtk]Kf\"\" d",
+    "homephone": "72\\7_)|&?63",
+    "mobilephone": "7770 $",
+    "workphone": "82|~",
+    "secondaryphone": "83",
+    "id": null,
+    "all_phones_from_home_page": null
+  },
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "firstnameORhH",
+    "lastname": "lastnamer",
+    "homephone": "72\\~%- ",
+    "mobilephone": "77<}`:+@30",
+    "workphone": "82/\\;",
+    "secondaryphone": "83{]~/`{",
+    "id": null,
+    "all_phones_from_home_page": null
+  }
+]
