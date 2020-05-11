@@ -1,16 +1,17 @@
 from model.contact import Contact
-from random import randrange
+import random
+import time
 
-def test_delete_contact_by_index(app):
-    if app.contact.count() == 0:
+def test_delete_contact_by_id(app, db):
+    if len(db.get_contact_list()) == 0:
         app.contact.create(Contact(firstname='test', lastname='asfasf', homephone='asff'))
-    old_contacts = app.contact.get_contact_list()
-    index = randrange(len(old_contacts))
-    app.contact.delete_contact_by_index(index)
-    new_contacts = app.contact.get_contact_list()
-    assert len(old_contacts) - 1 == app.contact.count()
-    old_contacts[index:index+1] = []
-    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
+    old_contacts = db.get_contact_list()
+    contact = random.choice(old_contacts)
+    app.contact.delete_contact_by_id(contact.id)
+    time.sleep(2)
+    new_contacts = db.get_contact_list()
+    old_contacts.remove(contact)
+    assert old_contacts == new_contacts
 
 
 

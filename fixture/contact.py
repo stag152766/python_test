@@ -108,6 +108,19 @@ class ContactHelper:
             print('no alert')
         self.contact_cache = None
 
+    def delete_contact_by_id(self, id):
+        driver = self.app.driver
+        self.open_home_page()
+        driver.find_element_by_id(id).click()
+        driver.find_element_by_xpath("//input[@value='Delete']").click()
+        try:
+            WebDriverWait(driver, 3).until(EC.alert_is_present(), 'Delete 1 addresses?')
+            alert = driver.switch_to.alert
+            alert.accept()
+        except TimeoutError:
+            print('no alert')
+        self.contact_cache = None
+
     def count(self):
         driver = self.app.driver
         self.open_home_page()
