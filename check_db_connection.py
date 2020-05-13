@@ -1,25 +1,12 @@
-import mysql.connector
-from fixture.db import DbFixture
+from fixture.orm import OrmFixture
 
-# установка соединения
-"""connection = mysql.connector.connect(host='127.0.0.1', database='addressbook', username='root', password='')
 
-# чтение
-try:
-    cursor = connection.cursor()
-    cursor.execute('select * from group_list')
-    for row in cursor.fetchall():
-        print(row)
-finally:
-    connection.close()
-"""
-
-db = DbFixture(host='127.0.0.1', database='addressbook', user='root', password='')
+db = OrmFixture(host='127.0.0.1', database='addressbook', user='root', password='')
 
 try:
-    contacts = db.get_contact_list()
-    for contact in contacts:
-        print(contact)
-    print(len(contacts))
+    l = db.get_contact_list()
+    for item in l:
+        print(item)
+    print(len(l))
 finally:
-    db.destroy()
+    pass #db.destroy()
