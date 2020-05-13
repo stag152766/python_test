@@ -45,4 +45,6 @@ class OrmFixture:
     def get_contact_list(self):
         return self.convert_contacts_to_model(select(c for c in OrmFixture.ORMContact if c.deprecated is None))
 
+    #test_git
+
 
