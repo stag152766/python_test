@@ -4,9 +4,9 @@ import random
 import os
 import jsonpickle
 
-
-n = 5
+n = 1
 f = 'data/contact.json'
+
 
 def random_string(prefix, maxlen):
     symbols = string.ascii_letters + string.digits + string.punctuation + " " * 10
@@ -18,9 +18,7 @@ def random_phones(prefix, maxlen):
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 
-testdata = [Contact(firstname='', homephone='', lastname='', secondaryphone='', workphone='',
-                    mobilephone='')] + \
-           [Contact(firstname=random_string('firstname', 10), lastname=random_string('lastname', 20),
+testdata = [Contact(firstname=random_string('firstname', 10), lastname=random_string('lastname', 20),
                     homephone=random_phones('72', 10), workphone=random_phones('82', 10),
                     mobilephone=random_phones('77', 10), secondaryphone=random_phones('83', 10)) for x in range(n)]
 

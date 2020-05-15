@@ -8,21 +8,23 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
-    def create(self, contact):
+    def create(self, contact, group=None):
         driver = self.app.driver
         driver.find_element_by_link_text("add new").click()
-        self.fill_contact_form(contact)
-        driver.find_element_by_xpath("(//input[@name='submit'])[2]").click()
+        self.fill_contact_form(contact, group)
+        driver.find_element_by_name("submit").click()
         self.open_home_page()
         self.contact_cache = None
 
-    def fill_contact_form(self, contact):
+    def fill_contact_form(self, contact, group):
         self.change_field_value("firstname", contact.firstname)
         self.change_field_value("lastname", contact.lastname)
         self.change_field_value("home", contact.homephone)
         self.change_field_value("work", contact.workphone)
         self.change_field_value("work", contact.mobilephone)
         self.change_field_value("phone2", contact.secondaryphone)
+        if group is not None:
+            self.select_group_by_id(group)
 
     def change_field_value(self, field_name, text):
         driver = self.app.driver
@@ -31,6 +33,11 @@ class ContactHelper:
             driver.find_element_by_name(field_name).clear()
             driver.find_element_by_name(field_name).send_keys(text)
 
+    def select_group_by_id(self, group):
+        if id is not None:
+            driver = self.app.driver
+            driver.find_element_by_css_selector("option[value='%s']" % group.id).click()
+
     def open_home_page(self):
         driver = self.app.driver
         driver.find_element_by_link_text("home").click()
@@ -38,14 +45,6 @@ class ContactHelper:
     def modify_first_contact(self, new_contact_data):
         self.open_contact_to_edit_by_index(new_contact_data, 0)
 
-    # def open_contact_to_edit_by_index(self, new_contact_data, index):
-    #     driver = self.app.driver
-    #     self.open_home_page()
-    #     driver.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
-    #     self.fill_contact_form(new_contact_data)
-    #     driver.find_element_by_name('update').click()
-    #     self.open_home_page()
-    #     self.contact_cache = None
 
     def open_contact_to_view_by_index(self, index):
         driver = self.app.driver
